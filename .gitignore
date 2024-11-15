@@ -1,0 +1,4 @@
+#ignore virtual environments on Git (so does't try to commit 1000s+ files)
+.venv/
+venv/
+env/
