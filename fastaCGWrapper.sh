@@ -13,6 +13,9 @@ source "$script_dir/venv/bin/activate"
 # install requirements
 pip install -r "$script_dir/requirements.txt"
 
+# make /data directory (/data/ in .gitignore)
+mkdir data
+
 # downloads argument link from url (.fa.gz file), renames it to fasta.fa.gz, then gunzips it (creates a fasta.fa file)
 wget "$1" -O "$script_dir/data/fasta.fa.gz" && gunzip "$script_dir/data/fasta.fa.gz"
 
