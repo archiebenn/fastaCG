@@ -6,7 +6,7 @@ import sys
 fastaFile = sys.argv[1] #from bash script (it's always just fasta.fa here - don't actually need to use sys.argv but why not)
 data = open(fastaFile, 'r')
 
-#1. dividing FASTA strings at 'Rosalind_xxxx':
+#1. dividing FASTA strings:
 seq = data.read()
 #print(seq)
 sequences = seq.split('>') #splits at '>' and removes '>'
@@ -75,5 +75,5 @@ sortedSequencepercentCGDict = sorted(sequencePercentCGDict.items(),
                                      key = lambda x:x[1],
                                      reverse = True)                                    
 print()
-print('SEQUENCE, GC PERCENTAGE:')
+print('SEQUENCE NAME, GC PERCENTAGE:')
 print(sortedSequencepercentCGDict)
