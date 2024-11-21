@@ -1,6 +1,6 @@
-# FastaCG Calculator
+# FastaCG CLI Calculator
 
-Project allows CG content of FASTA to be calculated from the command line using URL to .fa.gz file.
+CG content of FASTA sequence to be calculated from the command line using URL to the .fa.gz file.
 
 ## Requirements
 - Python 3.x
