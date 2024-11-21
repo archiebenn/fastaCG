@@ -19,8 +19,8 @@ mkdir data
 # downloads argument link from url (.fa.gz file), renames it to fasta.fa.gz, then gunzips it (creates a fasta.fa file)
 wget "$1" -O "$script_dir/data/fasta.fa.gz" && gunzip "$script_dir/data/fasta.fa.gz"
 
-# tells bash to run python script with fasta.fa as the argument (sys.argv[1] in python)
-# note that fasta.fa is the FILENAME (ie string literal), so .py script will need to open that file
+# tells bash to run python script with fasta.fa as the argument  (structure: python script.py argument)
+#therefore fasta.fa becomes sys.argv[1] in .py script
 python3 "$script_dir/fastaCG.py" "$script_dir/data/fasta.fa"
 
 
