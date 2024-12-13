@@ -70,10 +70,11 @@ for i in range(len(sequences)):
 
 
 
-#4. sorting the dictionary by value number :0
-sortedSequencepercentCGDict = sorted(sequencePercentCGDict.items(),
+#4. sorting the dictionary by value number
+sortedGCPercent = sorted(sequencePercentCGDict.items(),
                                      key = lambda x:x[1],
                                      reverse = True)                                    
-print()
-print('SEQUENCE NAME, GC PERCENTAGE:')
-print(sortedSequencepercentCGDict)
+
+print('\nSEQUENCE NAME, GC PERCENTAGE:')
+for sequence, gc in sortedGCPercent:
+    print(f'{sequence}: {gc}%')
