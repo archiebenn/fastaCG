@@ -75,6 +75,5 @@ sortedGCPercent = sorted(sequencePercentCGDict.items(),
                                      key = lambda x:x[1],
                                      reverse = True)                                    
 
-print('\nSEQUENCE NAME, GC PERCENTAGE:')
 for sequence, gc in sortedGCPercent:
-    print(f'{sequence}: {gc}%')
+    print(f'SEQUENCE NAME: {sequence}: \n GC PERCENTAGE: {gc}%')
