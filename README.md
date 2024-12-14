@@ -19,8 +19,11 @@ For example, using the .fa.gz of a Wild Boar Y chromosome primary assembly from 
  - Copy url: https://ftp.ensembl.org/pub/current_fasta/sus_scrofa/dna/Sus_scrofa.Sscrofa11.1.dna.primary_assembly.Y.fa.gz
  - Run ./fastaCGWrapper https://ftp.ensembl.org/pub/current_fasta/sus_scrofa/dna/Sus_scrofa.Sscrofa11.1.dna.primary_assembly.Y.fa.gz
  - Overwrite fasta.fa
- - Outputs: SEQUENCE NAME: Y dna:primary_assembly primary_assembly:Sscrofa11.1:Y:1:43547828:1 REF: 
-CG PERCENTAGE: 43.21423907651394
+ - Outputs:
+   ```bash
+   SEQUENCE NAME: Y dna:primary_assembly primary_assembly:Sscrofa11.1:Y:1:43547828:1 REF:
+   CG PERCENTAGE: 43.21423907651394
+   ```
  - CG percentage ~43.2%
 
 ## How it works
