@@ -17,7 +17,7 @@ CG content of FASTA sequence(s) to be calculated from the command line using URL
 ## Example
 For example, using the .fa.gz of a Wild Boar Y chromosome primary assembly from ensembl:
  - Copy url: https://ftp.ensembl.org/pub/current_fasta/sus_scrofa/dna/Sus_scrofa.Sscrofa11.1.dna.primary_assembly.Y.fa.gz
- - Run ./fastaCGWrapper https://ftp.ensembl.org/pub/current_fasta/sus_scrofa/dna/Sus_scrofa.Sscrofa11.1.dna.primary_assembly.Y.fa.gz
+ - Run the following: ./fastaCGWrapper https://ftp.ensembl.org/pub/current_fasta/sus_scrofa/dna/Sus_scrofa.Sscrofa11.1.dna.primary_assembly.Y.fa.gz
  - Overwrite fasta.fa
  - Outputs:
    ```bash
