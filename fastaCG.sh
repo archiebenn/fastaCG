@@ -21,7 +21,7 @@ wget "$1" -O "$script_dir/data/fasta.fa.gz" && gunzip "$script_dir/data/fasta.fa
 
 # tells bash to run python script with fasta.fa as the argument  (structure: python script.py argument)
 #therefore fasta.fa becomes sys.argv[1] in .py script
-python3 "$script_dir/fastaCGScript.py" "$script_dir/data/fasta.fa"
+python3 "$script_dir/scriptFastaCG.py" "$script_dir/data/fasta.fa"
 
 
 deactivate
