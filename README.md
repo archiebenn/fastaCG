@@ -1,4 +1,4 @@
-# FastaCG CLI Calculator
+# FastaCG CLI Calculator (Mini-Tool)
 
 CG content of FASTA sequence(s) to be calculated from the command line using URL to the .fa.gz file.
 
