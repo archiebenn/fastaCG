@@ -1,5 +1,5 @@
 #!/bin/bash
-#a bash script for URLs to .fa.gz (only - gzipped atm) files which will calculate the CG content from command line
+#a bash script for URLs to .fa.gz (only - gzipped) files which will calculate the CG content from command line
 
 # get cd
 script_dir="$(cd "$(dirname "$0")" && pwd)"
