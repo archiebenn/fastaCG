@@ -12,7 +12,7 @@ CG content of FASTA sequence(s) to be calculated from the command line using URL
 4. Run the script using the following command:
 
 ```bash
-./fastaCGWrapper.sh <URL-to-.fa.gz-file>
+./fastaCG.sh <URL-to-.fa.gz-file>
 ```
 ## Example
 For example, using the .fa.gz of a Wild Boar Y chromosome primary assembly from ensembl:
