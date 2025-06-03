@@ -1,6 +1,6 @@
 # FastaCG CLI Calculator (mini tool)
 
-CG content of FASTA sequence(s) to be calculated from the command line using URL to the .fa.gz file.
+Mini tool to calculate CG content of a FASTA sequence(s) from the command line using the URL to the .fa.gz file
 
 ## Requirements
 - Python 3.x
