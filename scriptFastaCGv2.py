@@ -15,6 +15,8 @@ totalSeqLength = 0
 # Main loop
 for record in SeqIO.parse(fastaFile, 'fasta'):
     seq = record.seq.upper()
+    countA = seq.count('A')
+    countT = seq.count('T')
     countC = seq.count('C')
     countG = seq.count('G')
     seqLength = len(seq)
@@ -24,7 +26,7 @@ for record in SeqIO.parse(fastaFile, 'fasta'):
     if seqLength == 0:
         percentCG = 0
     else :
-        percentCG = ((countC + countG)/seqLength)*100
+        percentCG = ((countC + countG)/(countA + countT + countC + countG))*100
     
     percentCGdict[record.description] = percentCG
 
