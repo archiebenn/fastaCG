@@ -24,6 +24,7 @@ For example, using the .fa.gz of a Wild Boar Y chromosome primary assembly from 
    ```bash
    SEQUENCE NAME: Y dna:primary_assembly primary_assembly:Sscrofa11.1:Y:1:43547828:1 REF:
    CG PERCENTAGE: 43.21%
+   TIME: 0.68s for a length of 43547828 bases
    ```
  - CG percentage output at 43.21%
 
@@ -43,6 +44,7 @@ v2 - completed June 2025
 - Uses Biopython's SeqIO to parse FASTA for more biologically reliable and accurate parsing.
 - Simplifies base counting logic to directly calculate CG percentage.
 - Case-insensitive to include all bases in FASTA file.
+- Includes time taken and total base count for the FASTA file.
 - Slightly faster. For example on https://ftp.ensembl.org/pub/current_fasta/caenorhabditis_elegans/dna/Caenorhabditis_elegans.WBcel235.dna.toplevel.fa.gz:
   v1 - Script took 1.56s for a length of 100286799 bases (slightly overcounted)
   v2 - Script took 1.29s for a length of 100286401 bases (accurate base count)
