@@ -31,8 +31,8 @@ For example, using the .fa.gz of a Wild Boar Y chromosome primary assembly from 
 
 ## How it works
  - When the executable ./fastaCG.sh is run with a <URL-to-.fa.gz-file> from the command line, the link is downloaded using wget, renamed to 'fasta.fa.gz', and then gunzipped to leave the file 'fasta.fa'.
- - This fasta.fa file is then passed on to fastaCG.py, where the FASTA data are divided and cleaned, and the bases are counted to give a CG percentage.
- - The output of fastaCG.py gives the name of the sequence(s) from the FASTA file, followed by the CG percentage of that sequence.
+ - This fasta.fa file is then passed on to scriptfastaCGv2.py, where the bases for the sequence(s) are counted to give a CG percentage using Biopython's SeqIO.
+ - The output of scriptfastaCGv2.py gives the name of the sequence(s) from the FASTA file, followed by the CG percentage of that sequence, the total FASTA file base length, and the time taken for the .py script to run.
 
 ## Version History
 v1 - completed December 2024
