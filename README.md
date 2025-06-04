@@ -17,7 +17,7 @@ Mini tool to calculate CG content of a FASTA sequence(s) from the command line u
 ```
 ## Example
 For example, using the .fa.gz of a Wild Boar Y chromosome primary assembly from ensembl:
- - Copy url: https://ftp.ensembl.org/pub/current_fasta/sus_scrofa/dna/Sus_scrofa.Sscrofa11.1.dna.primary_assembly.Y.fa.gz
+ - Copy URL: https://ftp.ensembl.org/pub/current_fasta/sus_scrofa/dna/Sus_scrofa.Sscrofa11.1.dna.primary_assembly.Y.fa.gz
  - Run the following: ./fastaCG.sh https://ftp.ensembl.org/pub/current_fasta/sus_scrofa/dna/Sus_scrofa.Sscrofa11.1.dna.primary_assembly.Y.fa.gz
  - Select 'y' to overwrite existing fasta.fa file in project directory
  - Outputs:
@@ -37,14 +37,14 @@ For example, using the .fa.gz of a Wild Boar Y chromosome primary assembly from 
 ## Version History
 v1 - completed December 2024
 - Manual parsing of FASTA file using string methods.
-- Separately counts each base string 'A', 'T', 'C', 'G' in lists.
+- Separately counts each base as strings 'A', 'T', 'C', 'G' in lists.
 - Manually constructs sequence headers and splits on '>'.
-- Ignored lowercase bases, occassionally leading to inaccurate percentages.
+- Ignored lowercase bases, occasionally leading to inaccurate percentages.
 
 v2 - completed June 2025
 - Uses Biopython's SeqIO to parse FASTA for more biologically reliable and accurate parsing.
 - Simplifies base counting logic to directly calculate CG percentage.
-- Case-insensitive to include all bases in FASTA file.
+- Handles upper- and lower-case bases (e.g G and g) to include all bases in FASTA file.
 - Includes time taken and total base count for the FASTA file.
 - Slightly faster. For example on https://ftp.ensembl.org/pub/current_fasta/caenorhabditis_elegans/dna/Caenorhabditis_elegans.WBcel235.dna.toplevel.fa.gz:  
   v1 - Script took 1.56s for a length of 100286799 bases (slightly overcounted)  
