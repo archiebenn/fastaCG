@@ -38,5 +38,5 @@ for sequence, cg in percentCGdict.items():
 
 end = time.perf_counter()
 
-print(f'TOTAL FASTA LENGTH: {totalSeqLength} bases"')
+print(f'TOTAL FASTA LENGTH: {totalSeqLength} bases')
 print(f'TIME: {end - start:.2f}s')
