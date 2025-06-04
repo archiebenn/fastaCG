@@ -32,6 +32,6 @@ For example, using the .fa.gz of a Wild Boar Y chromosome primary assembly from 
  - The output of fastaCG.py gives the name of the sequence(s) from the FASTA file, followed by the CG percentage of that sequence.
 
 ## Version History
-# v1 - completed December 2024
+v1 - completed December 2024
 
-# v2 - completed June 2025
+v2 - completed June 2025
