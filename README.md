@@ -4,6 +4,7 @@ Mini tool to calculate CG content of a FASTA sequence(s) from the command line u
 
 ## Requirements
 - Python 3.x
+- Biopython
 
 ## Usage
 1. Clone the repository.
@@ -33,5 +34,15 @@ For example, using the .fa.gz of a Wild Boar Y chromosome primary assembly from 
 
 ## Version History
 v1 - completed December 2024
+- Manual parsing of FASTA file using string methods
+- Separately counts each base string 'A', 'T', 'C', 'G' in lists
+- Manually constructs sequence headers and splits on '>'
+- Ignored lowercase bases, occassionally leading to inaccurate percentages
 
 v2 - completed June 2025
+- Uses Biopython's SeqIO to parse FASTA. More biologically reliable and accurate parsing
+- Simplifies base counting logic to directly calculate CG percentage
+- Case-insensitive to include all bases in FASTA file
+- Slightly faster. For example on https://ftp.ensembl.org/pub/current_fasta/caenorhabditis_elegans/dna/Caenorhabditis_elegans.WBcel235.dna.toplevel.fa.gz:
+  v1 - Script took 1.56s for a length of 100286799 bases (slightly overcounted)
+  v2 - Script took 1.29s for a length of 100286401 bases (accurate base count)
