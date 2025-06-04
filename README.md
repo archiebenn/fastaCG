@@ -24,7 +24,7 @@ For example, using the .fa.gz of a Wild Boar Y chromosome primary assembly from 
    ```bash
    SEQUENCE NAME: Y dna:primary_assembly primary_assembly:Sscrofa11.1:Y:1:43547828:1 REF:
    CG PERCENTAGE: 43.21%
-   TOTAL FASTA LENGTH: 43547828 bases"
+   TOTAL FASTA LENGTH: 43547828 bases
    TIME: 0.67s
    ```
  - CG percentage output at 43.21%
