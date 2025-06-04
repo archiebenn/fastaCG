@@ -38,5 +38,5 @@ for sequence, cg in percentCGdict.items():
 
 end = time.perf_counter()
 
-print(f"Script took {end - start:.2f}s for a length of {totalSeqLength} bases")
+print(f"TIME: {end - start:.2f}s for a length of {totalSeqLength} bases")
 print()
