@@ -1,6 +1,8 @@
 #!/bin/bash
 #a bash script for URLs to .fa.gz (only - gzipped) files which will calculate the CG content from command line
 
+set -e
+
 # get cd
 script_dir="$(cd "$(dirname "$0")" && pwd)"
 
@@ -14,7 +16,14 @@ source "$script_dir/venv/bin/activate"
 pip install -r "$script_dir/requirements.txt"
 
 # make /data directory (/data/ in .gitignore)
-mkdir data
+mkdir -p data
+
+# check if URL is provided
+if [ -z "$1" ]; then
+  echo "Error: No URL provided."
+  echo "Usage: ./fastaCG.sh <URL-to-.fa.gz-file>"
+  exit 1
+fi
 
 # downloads argument link from url (.fa.gz file), renames it to fasta.fa.gz, then gunzips it (creates a fasta.fa file)
 wget "$1" -O "$script_dir/data/fasta.fa.gz" && gunzip "$script_dir/data/fasta.fa.gz"
