@@ -3,8 +3,15 @@
 Mini tool to calculate CG content of a FASTA sequence(s) from the command line using the URL to the .fa.gz file
 
 ## Requirements
-- Python 3.x
+This tool is designed for Unix-like systems (Linux, macOS etc.) and requires:
+- bash
+- Python 3.x with venv and pip
 - Biopython
+- wget
+- gunzip (from gzip)
+
+Make sure these are installed before running the script.
+
 
 ## Usage
 1. Clone the repository.
