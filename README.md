@@ -26,7 +26,7 @@ Make sure these are installed before running the script.
 For example, using the .fa.gz of a Wild Boar Y chromosome primary assembly from ensembl:
  - Copy URL: https://ftp.ensembl.org/pub/current_fasta/sus_scrofa/dna/Sus_scrofa.Sscrofa11.1.dna.primary_assembly.Y.fa.gz
  - Run the following: `./fastaCG.sh https://ftp.ensembl.org/pub/current_fasta/sus_scrofa/dna/Sus_scrofa.Sscrofa11.1.dna.primary_assembly.Y.fa.gz`
- - Select 'y' to overwrite existing fasta.fa file in project directory
+ - Select 'y' to overwrite existing `fasta.fa` file in project directory
  - Outputs:
    ```bash
    SEQUENCE NAME: Y dna:primary_assembly primary_assembly:Sscrofa11.1:Y:1:43547828:1 REF:
